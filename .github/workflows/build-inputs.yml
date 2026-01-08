@@ -8,14 +8,15 @@ on:
       board:
         description: 'board'
         required: true
+        default: 'nice_nano'
       shield:
         description: 'shield'
         required: false
-        default: 'default'
+        default: 'corne_left,corne_right'
       alphas:
         description: 'alphas'
         required: false
-        default: 'default'
+        default: 'QWERTY'
         type: choice
         options:
         - "default"
