@@ -1,6 +1,6 @@
 # My Keymap
 
-![Raf avatar](keymap-drawer/corne.svg)
+[[keymap-drawer/corne.svg]]
 
 
 
