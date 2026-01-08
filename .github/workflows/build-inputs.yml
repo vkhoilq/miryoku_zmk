@@ -12,7 +12,7 @@ on:
       shield:
         description: 'shield'
         required: false
-        default: 'corne_left,corne_right'
+        default: 'corne_left,corne_right,settings_reset'
       alphas:
         description: 'alphas'
         required: false
