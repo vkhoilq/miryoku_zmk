@@ -1,0 +1,23 @@
+name: Draw ZMK Keymaps
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/*.keymap"
+      - "config/*.conf"
+      - "miryoku/**"
+      - ".github/workflows/draw-keymaps.yml"
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    permissions:
+      contents: write
+    with:
+      keymap_patterns: "config/corne.keymap"
+      output_folder: "keymap-drawer"
+      parse_args: "--base-keymap miryoku/miryoku.dtsi"
+      # The preprocessing requires finding the local headers.
+      # The reusable workflow usually handles partial setups, but for Miryoku's deep nesting
+      # we assume the standard action behavior works. 
+      # We specify 'corne' file specifically to avoid generating SVGs for all boards.
