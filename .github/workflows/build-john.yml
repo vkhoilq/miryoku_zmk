@@ -1,7 +1,7 @@
 # Copyright 2022 Manna Harbour
 # https://github.com/manna-harbour/miryoku
 
-name: 'Build Mine'
+name: 'Build avc'
 on: workflow_dispatch
 jobs:
   build:
@@ -12,5 +12,5 @@ jobs:
       shield: '["corne_left","corne_right"]'
       alphas: '["ColemakDHK"]'
       extra: '["QWERTY"]'
-
-
+      
+ 
