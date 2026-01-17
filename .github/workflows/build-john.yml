@@ -9,7 +9,7 @@ jobs:
     secrets: inherit
     with:
       board: '["nice_nano"]'
-      shield: '["corne_left,"corne_right","settings_reset"]'
+      shield: '["corne_left","corne_right","settings_reset"]'
       alphas: '["ColemakDHK"]'
       extra: '["QWERTY"]'
 
