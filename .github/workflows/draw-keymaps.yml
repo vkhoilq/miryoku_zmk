@@ -5,6 +5,7 @@ on:
     paths:
       - "config/*.keymap"
       - "config/*.conf"
+      - "config/west.yml"
       - "miryoku/**"
       - ".github/workflows/draw-keymaps.yml"
 
@@ -16,7 +17,7 @@ jobs:
     with:
       keymap_patterns: "config/corne.keymap"
       output_folder: "keymap-drawer"
-      parse_args: "--base-keymap miryoku/miryoku.dtsi"
+      parse_args: ""  # Removed base-keymap as we use preprocessed output
       # The preprocessing requires finding the local headers.
       # The reusable workflow usually handles partial setups, but for Miryoku's deep nesting
       # we assume the standard action behavior works. 
